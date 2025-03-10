@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gamecontain {
+  padding: 2rem 7rem;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.484);
+}
+
+.resultimg {
+  display: flex;
+  column-gap: 3rem;
+}
+
+.resultimg img {
+  max-height: 220px;
+}
+
+.user img {
+  height: 220px;
+  transform: rotate(90deg);
+}
+
+.cpu img {
+  height: 220px;
+  transform: rotate(270deg) rotateY(180deg);
+}
+
+.result {
+  text-align: center;
+  font-size: 2.2rem;
+  color: blue;
+  margin-top: 2rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.option_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.option_img:hover {
+  opacity: 1;
+}
+
+.option_img.active {
+  opacity: 1;
+}
+
+.option_img img {
+  height: 115px;
+  pointer-events: none;
+}
+
+.option_img p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: rgb(69, 69, 247);
+  pointer-events: none;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  font-size: 20px;
+  color: rgb(0, 255, 76);
+}
+
+.countwin {
+  font-size: 50px;
+  color: green;
+}

@@ -1,0 +1,63 @@
+body {
+    background-color: cadetblue;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.constainer {
+    display: flex;
+    background-color: #E6E6E6;
+    box-sizing: content-box;
+    box-shadow: 0px 10px 20px;
+    height: 400px; 
+    width: 800px;
+    margin: 5rem 18rem;
+    overflow: hidden; 
+    position: relative; 
+    background-image: url("https://as1.ftcdn.net/jpg/03/76/00/68/1000_F_376006884_L5DNQkIyAbEkV0sadKAFMHo2PC9kuUC5.webp");
+}
+
+.dragon img {
+    background-color: #8CA93B;
+    position: absolute;
+    width: 70px;
+    margin-left: 45px;
+    margin-top: 35%;
+    z-index: 10;
+}
+
+.feild img {
+    background-color: #8CA93B;
+    position: absolute;
+    width: 100px;
+    left: 100%; 
+    margin-top: 35%; 
+    transform: translateX(-50%);
+    animation: slide 2s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-900px);
+    }
+}
+
+.active {
+    animation: jump 1s ease-in;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-140px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
